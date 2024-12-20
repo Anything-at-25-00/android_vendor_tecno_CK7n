@@ -8,6 +8,33 @@ soong_namespace {
 }
 
 prebuilt_etc_xml {
+	name: "android.hardware.security.keymint-service.trustonic.xml",
+	owner: "tecno",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.secureclock-service.trustonic.xml",
+	owner: "tecno",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.sharedsecret-service.trustonic.xml",
+	owner: "tecno",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_hwcomposer.xml",
 	owner: "tecno",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml",
