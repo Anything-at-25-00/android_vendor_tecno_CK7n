@@ -6,6 +6,33 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/tecno/CK7n
 
 PRODUCT_COPY_FILES += \
+    vendor/tecno/CK7n/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
+    vendor/tecno/CK7n/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmtk_vt_wrapper.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmtkperf_client.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvcodec_cap.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvcodec_capenc.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvsim-adaptor-client.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_socketwrapper.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_service.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_wrapper.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtkperf_client.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsignal.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsource.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsysenv_system.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_cap.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_capenc.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvsim-adaptor-client.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvt_avsync.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/tecno/CK7n/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/tecno/CK7n/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/tecno/CK7n/proprietary/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/030c0000000000000000000000000000.drbin \
@@ -46,14 +73,14 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-mtk \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.trustonic \
-    vendor/tecno/CK7n/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
+    vendor/tecno/CK7n/proprietary/vendor/bin/hw/mt6789/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/camerahalserver \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
-    vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram@1.1-service \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
+    vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/tecno/CK7n/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
     vendor/tecno/CK7n/proprietary/vendor/bin/kmsetkey_ca.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/kmsetkey_ca.trustonic \
@@ -65,6 +92,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
     vendor/tecno/CK7n/proprietary/vendor/bin/rcs_volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/rcs_volte_stack \
     vendor/tecno/CK7n/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
+    vendor/tecno/CK7n/proprietary/vendor/bin/tranlog:$(TARGET_COPY_OUT_VENDOR)/bin/tranlog \
+    vendor/tecno/CK7n/proprietary/vendor/bin/tranlogconfig:$(TARGET_COPY_OUT_VENDOR)/bin/tranlogconfig \
     vendor/tecno/CK7n/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
     vendor/tecno/CK7n/proprietary/vendor/bin/volte_imcb:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imcb \
     vendor/tecno/CK7n/proprietary/vendor/bin/volte_imsm_93:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imsm_93 \
@@ -74,8 +103,19 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/tecno/CK7n/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
     vendor/tecno/CK7n/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
+    vendor/tecno/CK7n/proprietary/vendor/data/camera/morpho/morpho_calibration_video.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/morpho/morpho_calibration_video.bin \
+    vendor/tecno/CK7n/proprietary/vendor/data/camera/vidhance/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/data/camera/vidhance/vidhance.lic \
+    vendor/tecno/CK7n/proprietary/vendor/data/camera/vidhance/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/data/camera/vidhance/vidhance_calibration \
     vendor/tecno/CK7n/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/cache_s5kgd2sp_17201766_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_s5kgd2sp_17201766_front_g97 \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/cache_s5kgwbsw_17201734_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_s5kgwbsw_17201734_back_g97 \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/dgain_mask_s5kgd2sp_17201766_front_g97.bin:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/dgain_mask_s5kgd2sp_17201766_front_g97.bin \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/dgain_mask_s5kgwbsw_17201734_back_g97.bin:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/dgain_mask_s5kgwbsw_17201734_back_g97.bin \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/siq_ocl_cache_s5kgd2sp_17201766_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/siq_ocl_cache_s5kgd2sp_17201766_front_g97 \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/siq_ocl_cache_s5kgwbsw_17201734_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/siq_ocl_cache_s5kgwbsw_17201734_back_g97 \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/superiq_model_s5kgd2sp_17201766_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/superiq_model_s5kgd2sp_17201766_front_g97 \
+    vendor/tecno/CK7n/proprietary/vendor/etc/anc_siq/superiq_model_s5kgwbsw_17201734_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/superiq_model_s5kgwbsw_17201734_back_g97 \
     vendor/tecno/CK7n/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
     vendor/tecno/CK7n/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -195,6 +235,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/etc/audio_param/preset_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_ringtone.bin \
     vendor/tecno/CK7n/proprietary/vendor/etc/audio_param/preset_voice.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voice.bin \
     vendor/tecno/CK7n/proprietary/vendor/etc/audio_param/preset_voip.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voip.bin \
+    vendor/tecno/CK7n/proprietary/vendor/etc/cam3atms_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cam3atms_profiles.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -206,7 +247,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/ecc_list_tran2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_tran2.xml \
-    vendor/tecno/CK7n/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/tecno/CK7n/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -228,18 +268,19 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
-    vendor/tecno/CK7n/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/tecno/CK7n/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
-    vendor/tecno/CK7n/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
+    vendor/tecno/CK7n/proprietary/vendor/etc/init/init.tranlog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tranlog.rc \
+    vendor/tecno/CK7n/proprietary/vendor/etc/init/init.tranlogconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tranlogconfig.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
@@ -258,14 +299,12 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
-    vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/CK7n/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
-    vendor/tecno/CK7n/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/tecno/CK7n/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/tecno/CK7n/proprietary/vendor/etc/nt37703_fhdp_dsi_vdo_tm_panda_120hz_ck7n_cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt37703_fhdp_dsi_vdo_tm_panda_120hz_ck7n_cust_color.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
@@ -424,6 +463,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
     vendor/tecno/CK7n/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
     vendor/tecno/CK7n/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
+    vendor/tecno/CK7n/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
+    vendor/tecno/CK7n/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/tecno/CK7n/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/tecno/CK7n/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -538,8 +579,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6789/libGLES_mali.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so \
@@ -547,14 +586,260 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/gralloc.common.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vulkan.mali.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pblcs5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5kgwbswmipiraw_Video_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_pbros5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5kgwbswmipiraw_Video_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libCamera_s5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgwbswmipiraw_Video_Zoom2.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libJpgEncPipe.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libMtkOmxAdpcmDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAdpcmDec.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libMtkOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAlacDec.so \
@@ -564,7 +849,9 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkSpeechEnh.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSQLiteModule_VER_ALL.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libTransNS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTransNS.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
@@ -572,6 +859,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libalsautils-v32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils-v32.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
@@ -591,6 +879,9 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libcam3_transerverengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam3_transerverengine.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_c2store.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_vdec.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_venc.so \
@@ -604,6 +895,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdecrypt.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libdre.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdre.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libformatter.so \
@@ -616,9 +908,15 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_gp_client.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_uree.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimgsensorca.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libispcameraca.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_vendor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp3dec_mtk.so \
@@ -631,30 +929,100 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_sec.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxp_extamp_intf.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/librt_extamp_intf.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libstfaceunlockppl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlockppl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_header_stub.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libverno.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvolte_core_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_core_shr.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvolte_xdmc_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_xdmc_shr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu5.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/fake_serial_yuv_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/fake_serial_yuv_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/fake_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/fake_serial_yuv_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/gc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/gc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/lib3a.aishutter.models.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.aishutter.models.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.awb.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.log.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Flash_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_P1_YUV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Video_1080.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Video_4k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_gc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_gc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgwbswmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaal_cust_func.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaalservice.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.hal3a.log.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.halsensor.hwintegration.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcamalgo.platform2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.lens.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libdpframework.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libgpudataproducer.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtk_drvb.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.atmseventmgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.eventcallback.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_debugutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_metadata.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_modulehelper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_stdutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_sysutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_tuning_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_ulog.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libnir_neon_driver.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_cust_base.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_prot.so \
@@ -664,9 +1032,30 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libvcodecdrv_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv_v3a.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvpudv3a_vcodec.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcgc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcgc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcs5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcs5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcs5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pblcs5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbrogc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbrogc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbros5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbros5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbros5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/pbros5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/s5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/s5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/s5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/mt6789/s5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/s5k2lqsx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k2lqsx_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/s5k4h7_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k4h7_mipi_raw_IdxMgr.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.0.so \
@@ -692,6 +1081,20 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.rcs@2.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/APUWareApusysServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysServer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/APUWareHmpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareHmpServer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/APUWareUtilsServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsServer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.common@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@3.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@3.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.4.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.5.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.6.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.5.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.6.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
@@ -702,39 +1105,307 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libMcGatekeeper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/gralloc.common.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vulkan.mali.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/lib3a.ae.pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.pipe.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pblcs5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5kgwbswmipiraw_Video_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_pbros5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5kgwbswmipiraw_Video_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_360VideoHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Default_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Default_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_FaceBeauty_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_FilmVideo.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Filter_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_LLHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Panorama_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Portrait_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Slowmotion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_Screen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_ScreenTorch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Super_Flash_torch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_TikTok_Lite_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_TimeLapse.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_60fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_2k_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_720P_30fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgd2spmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgd2spmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_360HDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_3rd_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_3rd_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_3rd_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_3rd_Preview_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_AR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_AR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_B612_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_B612_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_B612_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_B612_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Boken_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Capture_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Capture_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_FaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_FaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_HDR_MINUS_EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_2X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_4X_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_ISZ_Zoom_7X_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_NHDR_0EV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Preview_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Preview_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Pro_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Pro_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_RGBW_Fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_RGBW_Fusion.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Reprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Reprocess.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Resolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Resolution_ISZ_Zoom3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Resolution_zoom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Capture_FD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Capture_MF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Documents.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Documents.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Filter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Filter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_MagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_MagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Preview_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Preview_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_Preview_PF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_Preview_PF.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Scene_pro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Scene_pro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Short_Film.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Short_Film.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_SuperFlashLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_SuperFlashLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_SuperNight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_SweetSnap_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_SweetSnap_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_TikTok_Lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_TikTok_Lite.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Torch_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Torch_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_1080p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_120fps.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_2k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_EIS.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_Zoom1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libCamera_s5kgwbswmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgwbswmipiraw_Video_Zoom2.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libFy-3A-Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFy-3A-Core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libFy-3A-Param.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFy-3A-Param.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libMegviiHum.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMegviiHum.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libTranAutoColorLevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranAutoColorLevel.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libTranExtImgThread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranExtImgThread.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libTranGoldWaterMark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranGoldWaterMark.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libTranMegHumanEffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranMegHumanEffect.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libTranVideoFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranVideoFilter.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libaibld.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibld.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libalsautils-v32.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils-v32.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libanc_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libanc_hdr_adapter_s5kgd2sp_17201766_front_g97.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr_adapter_s5kgd2sp_17201766_front_g97.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libanc_hdr_adapter_s5kgwbsw_17201734_back_g97.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr_adapter_s5kgwbsw_17201734_back_g97.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libancbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libancbase_848.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase_848.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys_edma.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_core.so \
@@ -759,6 +1430,28 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcam.seninfn3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.seninfn3d.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcam3_tranelapsedtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_tranelapsedtime.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcam3_tranpriorityctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_tranpriorityctrl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcam3_transerverengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_transerverengine.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcam_STcallbackHelper_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_STcallbackHelper_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.3dnr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.WarpMapResizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.WarpMapResizer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.eis.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fsc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.gyro.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.hdr10p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.hdr10p.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lmv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.mcnr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.nr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.nr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcares_naptr.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
@@ -779,6 +1472,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdecrypt.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libfeaturepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeaturepolicy.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfgauge_gm30.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
@@ -792,25 +1486,39 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsensorca.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libispcameraca.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libminizip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminizip.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkares.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkcam_3rdparty.thread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.thread.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkcam_fdWarpConvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdWarpConvert.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-aov.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkhardware_legacy.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkisp_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkisp_metadata_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkisp_metadata_v2.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
@@ -818,6 +1526,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_vendor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkspparser.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtksysutils.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtktinyxml.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libmtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkutils.so \
@@ -830,26 +1539,28 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram_sec.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnxp_extamp_intf.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librgbwlightsensor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/librpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpc.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libstfaceunlockppl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstfaceunlockppl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlcWidevineModularDrm.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libtrancamJsonConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancamJsonConvertor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libtrancam_filelockmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancam_filelockmgr.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtranslator_mapi_v3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_mapi_v3.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtranslator_mdmi_v2.8.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_mdmi_v2.8.2.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/libtranssion_forkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranssion_forkexecwrap.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
@@ -858,26 +1569,346 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libwifi-hal-mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-mtk.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
-    vendor/tecno/CK7n/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/arm.graphics-V1-ndk_platform.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/fake_serial_yuv_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/fake_serial_yuv_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/fake_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/fake_serial_yuv_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/gc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/gc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.stat.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.aishutter.models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.aishutter.models.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.alsflicker.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.awb.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.ccudrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccudrv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.ccuif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccuif.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.custom.ae.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.dce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.dce.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flash.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flicker.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.gma.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.lce.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.log.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.n3d3a.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.color.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.flicker.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Flash_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Video.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_P1_YUV.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Video_1080.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Video_4k.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_gc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_gc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5kgwbswmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc02m1mipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5kgwbswmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgd2spmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgd2spmipiraw_Face_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgd2spmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgd2spmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgd2spmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgd2spmipiraw_Scene_Preview.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Capture_4cell.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgwbswmipiraw_Scene_Preview.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libImageEval.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libImageEval.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libNvLutEffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libNvLutEffect.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibrary.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibrary.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibrary.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibrary.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranASD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranASD.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranArcFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcFilter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranArcFlashNew.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcFlashNew.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranArcLowLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcLowLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranArcNightHawk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcNightHawk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranAutoColorLevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranAutoColorLevel.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranBefMakeup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranBefMakeup.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranColorEnhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranColorEnhance.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranDenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranDenoise.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranExtImgProc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranExtImgProc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranEyeDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranEyeDetect.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranGenderDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranGenderDetect.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranHumanLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranHumanLight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranITDFaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranITDFaceBeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMSFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMSFilter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMagicSky.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMegDualDepth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMegDualDepth.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMegDualDepthtoBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMegDualDepthtoBokeh.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMegDualRefocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMegDualRefocus.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMegFullHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMegFullHDR.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranMegHumanEffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMegHumanEffect.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranPlatHW.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranPlatHW.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranSTPRRepair.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSTPRRepair.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSTSingleBlur.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranSlimBody.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSlimBody.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranSmartDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSmartDetection.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTranSuperResolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSuperResolution.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTran_Log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTran_Log.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libTran_mtkPowerAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTran_mtkPowerAPI.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libWaterMarkProc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libWaterMarkProc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/lib_sr_indep_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib_sr_indep_ocl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltm.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltmx.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaal_cust_func.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaalservice.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libacdk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_moon.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_p1ggm.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_sun.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p4.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaidepth_tuning.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiselector.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libamipengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libamipengine.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libanc_dc_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libanc_dc_base.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libanc_fullhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libanc_fullhdr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_low_light_shot.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libarcsoft_night_hawk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_night_hawk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libarcsoft_torch_portrait_night.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_torch_portrait_night.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcalculatesharpness.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcalculatesharpness.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.afhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.afhal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.chdr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.feature_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.cctsvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.cctsvr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.log.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ae.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ai3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ai3a.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.awb.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.dng.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.fsmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.fsmgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lscMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lscMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.nvram.50.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.platform.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.resultpool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.resultpool.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.halisp.buf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.buf.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.halisp.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.common.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.halisp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.hwintegration.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.iopipe.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.isptuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.isptuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.pdtblgen.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.tuning.cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.tuning.cache.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.utils.sensorprovider.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.vhdr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcam3atms_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam3atms_profiles.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.ispfeature.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.lsc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.platform2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.rotate.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.vsf.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_isp.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_tuning_mgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_twin.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamera.custom.pd_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.custom.pd_buf_mgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customae.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customaf.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customawb.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customflk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.3a.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.isp.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.sensors.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera_exif.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.flashlight.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.lens.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.plugin.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcolorenhance_64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcolorenhance_64.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libcolorlevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcolorlevel.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libdenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdenoise.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_drv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_postproc.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdpframework.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libeffect_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeffect_hal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeffecthal.base.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libeyedetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeyedetector.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfacesattribute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfacesattribute.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.face.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.stereo.provider.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.vsdof.hal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature_3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_3dnr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_fsc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_lmv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_rss.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeatureiodrv_mem.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libgpudataproducer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_drv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_pipe.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libitdfacebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libitdfacebeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/liblpcnr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmagicsky_64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmagicsky_64.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmnl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmorpho_video_stabilizer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmpbase.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmsnr.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtk_drvb.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.atmseventmgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.eventcallback.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.depthmap.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.streaming.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.logicalmodule.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.core.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.customer.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.mtk.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_convertor.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_provider.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_debugutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_device3_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_app.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidlutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidlutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_device3_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_devicesessionpolicy.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_diputils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_exif.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_fdvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fdvt.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featurepolicy.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_featureutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featureutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_fwkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fwkutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_grallocutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwnode.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imem.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imgbuf.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mapping_mgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metadata.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metastore.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_mfb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mfb.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_aaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_aaa.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_custom.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_drv.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulehelper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_owe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_owe.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline_fbm.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_capture.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_isp.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_session.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-security.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_prerelease.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_rsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_rsc.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_scenariorecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_scenariorecorder.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_stdutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_streamutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_synchelper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_sysutils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_tuning_utils.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_ulog.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_adapter_mgvi.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libneuron_runtime.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_runtime.5.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libnir_neon_driver.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libportrait_repair_ppl3_ocl.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_cust_base.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_prot.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpqparamparser.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libremosaic_wrapper.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsdk_sr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libsegmention.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsegmention.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libsegmentionPre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsegmentionPre.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libsmartdetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsmartdetector.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libst_mobile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libst_mobile.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libst_sr_models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libst_sr_models.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libstblur_capture_api.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libstereoinfoaccessor_vsdof.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtf_asd_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtf_asd_lib.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtflite_native_gainference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_gainference.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtflite_native_inference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_inference.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtflite_native_seginference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_seginference.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtranssion_bodybeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtranssion_bodybeauty.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libtranssion_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtranssion_cal.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libvainr_model.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libwa_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libwa_depth.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libwa_dof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libwa_dof.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libwa_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libwa_refocus.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libwa_rtdof.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcgc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcgc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcs5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcs5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcs5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pblcs5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbrogc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc02m1_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbrogc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc02m1_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbros5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbros5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbros5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/pbros5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/s5kgd2sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgd2sp_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/s5kgd2sp_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgd2sp_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/s5kgwbsw_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgwbsw_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mt6789/s5kgwbsw_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgwbsw_mipi_raw_tuning.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5k2lqsx_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5k4h7_mipi_raw_IdxMgr.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.clientapi@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
@@ -892,6 +1923,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.1.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@1.1.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@2.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.1.so \
@@ -910,17 +1942,37 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.8.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.9.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlog@1.0.so \
+    vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.trustonic.tee.tui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee.tui@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.trustonic.tee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.0.so \
     vendor/tecno/CK7n/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
+    libwvhidl \
+    libwvdrmengine \
+    ImsService \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
+    lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_apuware_apusys.xml \
+    manifest_apuware_hmp.xml \
+    manifest_apuware_utils.xml \
+    manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
-    manifest_media_c2_V1_1_default.xml
+    manifest_media_c2_V1_1_default.xml \
+    vendor.transsion.hardware.trancam.trancamserver@1.0.xml
